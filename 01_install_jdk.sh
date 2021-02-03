@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo
+echo "* * * * * * * * * * * * * * * * * * *"
 echo "* * *   JDK Installation. . .   * * *"
+echo "* * * * * * * * * * * * * * * * * * *"
 echo
 
 mkdir /opt/java
@@ -17,7 +19,9 @@ export PATH" >> /etc/profile
 source /etc/profile
 
 echo
-echo "* * *   Configuring. . .   * * *"
+echo "* * * * * * * * * * * * * * * * *"
+echo "* * *    Configuring. . .   * * *"
+echo "* * * * * * * * * * * * * * * * *"
 echo
 
 update-alternatives --install "/usr/bin/java" "java" "/opt/java/jdk1.8.0_241/bin/java" 1
@@ -34,5 +38,7 @@ update-alternatives --install "/usr/bin/javaws" "javaws" "/opt/java/jdk1.8.0_241
 # update-alternatives --list javaws
 
 echo
-echo "* * *   All done !!   * * *"
+echo "* * * * * * * * * * * * * * * * *"
+echo "* * *   Finish! All done!   * * *"
+echo "* * * * * * * * * * * * * * * * *"
 echo

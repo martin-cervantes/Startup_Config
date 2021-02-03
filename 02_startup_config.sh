@@ -100,12 +100,16 @@ apt install apache2 -y
 apt install mysql-server -y
 
 echo
-echo "copy to the clipboard."
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+echo
+echo "Copy to the clipboard the 3 lines."
 echo
 echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'P4ssw0rd55';"
 echo "FLUSH PRIVILEGES;"
 echo "exit"
+
 read response
+
 mysql
 
 apt install phpmyadmin -y
