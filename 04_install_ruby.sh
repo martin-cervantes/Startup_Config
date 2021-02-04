@@ -30,6 +30,8 @@ rbenv install 2.7.0
 
 rbenv global 2.7.0
 
+apt install ruby-dev zlib1g-dev liblzma-dev -y
+
 echo "===> Installing Gem"
 
 apt install gem -y
