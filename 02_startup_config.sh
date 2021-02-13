@@ -143,8 +143,8 @@ apt install gnome-shell-pomodoro -y
 apt install gnome-mines -y
 apt install vlc -y
 apt install mame* joystick xboxdrv jstest-gtk -y
-cp -R roms ~/misProgramas/
-cp -R snapshots ~/misProgramas/
+cp -R roms /opt/
+cp -R snapshots /opt/
 
 ### git
 echo "===> Installing Git"
