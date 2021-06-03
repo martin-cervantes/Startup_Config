@@ -243,6 +243,14 @@ chown -R mcervantes:mcervantes /opt
 chown -R mcervantes:mcervantes /var/www/html
 chown -R mcervantes:mcervantes ~/Desktop/html
 
+echo
+echo "* * * * *   Create Guest User   * * * * *"
+echo
+adduser guest
+passwd -d guest
+chmod o-r mcervantes
+chmod o-x mcervantes
+
 # SOLO PARA UBUNTU BUDGIE
 # ROTATION LOCK SCREEN
 # gsettings set org.gnome.settings-daemon.peripherals.touchscreen orientation-lock true
