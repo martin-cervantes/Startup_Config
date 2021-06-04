@@ -174,6 +174,14 @@ cd $ORIGIN
 apt install ./zoom_amd64.deb -y
 
 echo
+echo "* * *   Postman   * * *"
+echo
+cd $ORIGIN
+tar -xzvf Postman-linux-x64-*.tar.gz -C /opt
+cd /opt/Postman
+./Postman
+
+echo
 echo "* * *   GitKraken   * * *"
 echo
 cd $ORIGIN
