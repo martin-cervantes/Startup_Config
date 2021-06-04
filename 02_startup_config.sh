@@ -138,6 +138,7 @@ echo "===> Installing MyApps"
 apt install gnome-tweak-tool -y
 apt install rar unrar zip unzip -y
 apt install gnome-control-center gnome-online-accounts -y
+apt install openshot -y
 apt install plank gimp gparted screenfetch -y
 apt install gnome-shell-pomodoro -y
 apt install gnome-mines -y
