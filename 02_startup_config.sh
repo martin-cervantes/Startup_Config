@@ -12,8 +12,6 @@ ORIGIN=$(pwd)
 gsettings set org.gnome.settings-daemon.plugins.power button-power 'suspend'
 gsettings get org.gnome.settings-daemon.plugins.power button-power
 
-mkdir /home/mcervantes/misProgramas
-
 echo
 echo "* * * * * * * * * * * * * * * * * * * * * * * * * * *"
 echo "* * *   Enabling Ubuntu Software Repositories   * * *"
@@ -195,7 +193,7 @@ apt install ./atom-amd64.deb -y
 echo
 echo "* * *   Arduino Studio   * * *"
 echo
-mkdir /home/mcervantes/misProgramas/Arduino
+mkdir /opt/Arduino
 apt install arduino -y
 chmod a+rw /dev/ttyACM0
 
@@ -215,8 +213,7 @@ apt install ./javafx_scenebuilder-2_0-linux-x64.deb -y
 echo
 echo "* * *   Android Studio   * * *"
 echo
-mkdir /home/mcervantes/misProgramas/SDK
-mkdir /home/mcervantes/misProgramas/Android
+mkdir /opt/SDK
 tar -xzvf $ORIGIN/android-studio-ide-*-linux.tar.gz -C /opt
 cd /opt/android-studio/bin
 sh studio.sh
@@ -226,7 +223,6 @@ sh studio.sh
 #echo
 #cd $ORIGIN
 #sh netbeans-8.2-linux.sh
-#mkdir /home/mcervantes/misProgramas/NetBeansProjects
 #echo "StartupWMClass=NetBeans IDE 8.2" \ | tee -a /usr/share/applications/netbeans-8.2.desktop
 
 echo
@@ -238,7 +234,6 @@ echo
 chown -R mcervantes:mcervantes /opt
 chown -R mcervantes:mcervantes /var/www/html
 chown -R mcervantes:mcervantes ~/Desktop/html
-chown -R mcervantes:mcervantes /home/mcervantes/misProgramas
 
 # SOLO PARA UBUNTU BUDGIE
 # ROTATION LOCK SCREEN
