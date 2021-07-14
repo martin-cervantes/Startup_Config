@@ -41,7 +41,7 @@ On your command line, run the files in order with admin privileges (except 03):
 ```
 
 ```sh
-  $ sudo sh ./04_install_ruby.sh
+  $ sh ./04_install_ruby.sh
 ```
 
 ## :busts_in_silhouette: Authors
