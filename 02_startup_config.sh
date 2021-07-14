@@ -49,6 +49,17 @@ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -
 add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
 
 
+echo "Advanced Copy – Add Progress Bar To cp And mv Commands In Linux"
+wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
+tar xvJf coreutils-8.32.tar.xz
+cd coreutils-8.32
+wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+patch -p1 -i advcpmv-0.8-8.32.patch
+./configure
+make
+cp src/cp /usr/local/bin/cp
+cp src/mv /usr/local/bin/mv
+
 echo
 echo "* * * * * * * * * * * * * * * * * * *"
 echo "* * *   Updating and Upgrading   * * *"
@@ -142,8 +153,9 @@ apt install gnome-shell-pomodoro -y
 apt install gnome-mines -y
 apt install vlc -y
 apt install mame* joystick xboxdrv jstest-gtk -y
-cp -R roms /opt/
-cp -R snapshots /opt/
+
+cp -Rg roms /opt/
+cp -Rg snapshots /opt/
 
 ### git
 echo "===> Installing Git"
