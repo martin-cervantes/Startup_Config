@@ -123,6 +123,7 @@ mysql
 
 apt install phpmyadmin -y
 apt install nodejs npm -y
+apt install mongodb-server -y
 apt install python3-pip -y
 apt install sqlite3 libsqlite3-dev -y
 
@@ -192,6 +193,13 @@ cd $ORIGIN
 tar -xzvf Postman-linux-x64-*.tar.gz -C /opt
 cd /opt/Postman
 ./Postman
+
+echo
+echo "* * *   MongoDB Compass   * * *"
+echo
+cd $ORIGIN
+echo
+apt install ./mongodb-compass_*_amd64.deb -y
 
 echo
 echo "* * *   GitKraken   * * *"
