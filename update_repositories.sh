@@ -17,15 +17,6 @@ git status
 git pull
 git push
 
-cd ~/Desktop/html/FCC
-echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
-echo
-echo "                  * * *     FCC     * * *"
-echo
-git status
-git pull
-git push
-
 cd ~/Desktop/html/Programming
 echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
 echo
