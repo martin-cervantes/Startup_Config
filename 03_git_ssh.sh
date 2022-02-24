@@ -34,8 +34,6 @@ cd /var/www/html
 
 git clone git@github.com:mcervantes71/Programming.git
 
-git clone git@github.com:mcervantes71/FCC.git
-
 cd ~/Downloads
 
 git clone git@github.com:mcervantes71/CW.git
