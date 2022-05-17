@@ -4,7 +4,7 @@ sudo apt install gcc g++ make curl -y
 
 echo "===> Installing Nodejs"
 
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
 sudo apt install nodejs -y
 
@@ -43,12 +43,12 @@ echo "===> Installing Ruby"
 
 echo "rbenv install --list"
 
-echo "rbenv install 2.7.3"
+echo "rbenv install 3.0.3"
 
-echo "rbenv global 2.7.3"
+echo "rbenv global 3.0.3"
 
 echo "rbenv versions"
- 
+
 echo "ruby --version"
 
 read response
@@ -56,12 +56,6 @@ read response
 echo "===> Installing Gem"
 
 sudo apt install gem -y
-
-gem install bundle
-
-gem install bundler
-
-gem install webpacker
 
 echo "===> Installing Rails"
 
@@ -85,7 +79,7 @@ echo "* * * * * * * * * * * * * * * * * * * * * * *"
 echo
 echo "Modify password for role postgres:"
 echo "sudo -u postgres psql postgres"
-echo 
+echo
 echo "alter user postgres with password 'postgres';"
 
 read response
