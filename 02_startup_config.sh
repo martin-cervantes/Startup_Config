@@ -60,6 +60,8 @@ make
 cp src/cp /usr/local/bin/cp
 cp src/mv /usr/local/bin/mv
 
+dpkg --add-architecture i386
+
 echo
 echo "* * * * * * * * * * * * * * * * * * *"
 echo "* * *   Updating and Upgrading   * * *"
@@ -83,6 +85,9 @@ echo "* * *   Programs Installation   * * *"
 echo "* * * * * * * * * * * * * * * * * * *"
 echo
 
+## Adobe
+apt install libxml2:i386 libcanberra-gtk-module:i386 gtk2-engines-murrine:i386 libatk-adaptor:i386 libgdk-pixbuf-xlib-2.0-0:i386
+wget -O ~/adobe.deb ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
 
 ## WPS Office
 echo "===> WPS Office"

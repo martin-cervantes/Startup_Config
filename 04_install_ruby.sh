@@ -78,6 +78,7 @@ echo
 echo "* * * * * * * * * * * * * * * * * * * * * * *"
 echo
 echo "Modify password for role postgres:"
+echo
 echo "sudo -u postgres psql postgres"
 echo
 echo "alter user postgres with password 'postgres';"
