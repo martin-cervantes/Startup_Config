@@ -268,8 +268,7 @@ echo "* * * * *   Create Guest User   * * * * *"
 echo
 adduser guest
 passwd -d guest
-chmod o-r mcervantes
-chmod o-x mcervantes
+chmod o-rx mcervantes
 
 # SOLO PARA UBUNTU BUDGIE
 # ROTATION LOCK SCREEN
