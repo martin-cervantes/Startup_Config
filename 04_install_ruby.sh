@@ -43,9 +43,9 @@ echo "===> Installing Ruby"
 
 echo "rbenv install --list"
 
-echo "rbenv install 3.0.3"
+echo "rbenv install 3.0.6"
 
-echo "rbenv global 3.0.3"
+echo "rbenv global 3.0.6"
 
 echo "rbenv versions"
 
@@ -59,7 +59,7 @@ sudo apt install gem -y
 
 echo "===> Installing Rails"
 
-gem install rails
+gem install rails -v 6.1.7.3
 
 echo "===> Installing Postgresql"
 
