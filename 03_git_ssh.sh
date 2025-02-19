@@ -32,13 +32,13 @@ ssh -T git@github.com
 
 cd /var/www/html
 
-git clone git@github.com:mcervantes71/Programming.git
+git clone git@github.com:martin-cervantes/Programming.git
 
 cd ~/Downloads
 
-git clone git@github.com:mcervantes71/CW.git
+git clone git@github.com:martin-cervantes/CW.git
 
-git clone git@github.com:mcervantes71/Android.git
+git clone git@github.com:martin-cervantes/Android.git
 
 echo
 echo "* * * * * * * * * * * * * * * * *"
