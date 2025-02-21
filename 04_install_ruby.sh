@@ -4,7 +4,7 @@ sudo apt install gcc g++ make curl -y
 
 echo "===> Installing Nodejs"
 
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 
 sudo apt install nodejs -y
 
@@ -43,9 +43,9 @@ echo "===> Installing Ruby"
 
 echo "rbenv install --list"
 
-echo "rbenv install 3.0.6"
+echo "rbenv install 3.3.7"
 
-echo "rbenv global 3.0.6"
+echo "rbenv global 3.3.7"
 
 echo "rbenv versions"
 
@@ -59,7 +59,7 @@ sudo apt install gem -y
 
 echo "===> Installing Rails"
 
-gem install rails -v 6.1.7.3
+gem install rails -v 7.2.2.1
 
 echo "===> Installing Postgresql"
 
