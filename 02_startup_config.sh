@@ -41,26 +41,26 @@ cd /opt
 wget http://www.webmin.com/jcameron-key.asc
 apt-key add jcameron-key.asc
 
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+# echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | tee /etc/apt/sources.list.d/google-chrome.list
 
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -
-add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+# wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
+# wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | apt-key add -
+# add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
 
 
-echo "Advanced Copy – Add Progress Bar To cp And mv Commands In Linux"
-wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
-tar xvJf coreutils-8.32.tar.xz
-cd coreutils-8.32
-wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
-patch -p1 -i advcpmv-0.8-8.32.patch
-./configure
-make
-cp src/cp /usr/local/bin/cp
-cp src/mv /usr/local/bin/mv
+# echo "Advanced Copy – Add Progress Bar To cp And mv Commands In Linux"
+# wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
+# tar xvJf coreutils-8.32.tar.xz
+# cd coreutils-8.32
+# wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+# patch -p1 -i advcpmv-0.8-8.32.patch
+# ./configure
+# make
+# cp src/cp /usr/local/bin/cp
+# cp src/mv /usr/local/bin/mv
 
-dpkg --add-architecture i386
+# dpkg --add-architecture i386
 
 echo
 echo "* * * * * * * * * * * * * * * * * * *"
@@ -86,8 +86,8 @@ echo "* * * * * * * * * * * * * * * * * * *"
 echo
 
 ## Adobe
-apt install libxml2:i386 libcanberra-gtk-module:i386 gtk2-engines-murrine:i386 libatk-adaptor:i386 libgdk-pixbuf-xlib-2.0-0:i386
-wget -O ~/adobe.deb ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
+# apt install libxml2:i386 libcanberra-gtk-module:i386 gtk2-engines-murrine:i386 libatk-adaptor:i386 libgdk-pixbuf-xlib-2.0-0:i386
+# wget -O ~/adobe.deb ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb
 
 ## WPS Office
 echo "===> WPS Office"
@@ -96,8 +96,8 @@ apt install ./wps-office*amd64.deb -y
 mv ~/Desktop/wps-office* /opt/kingsoft/wps-office/
 
 ## Multi Writer USB Installation
-echo "===> Multi Writer USB"
-apt install gnome-multi-writer -y
+# echo "===> Multi Writer USB"
+# apt install gnome-multi-writer -y
 
 ## Wine - Windows Emulator
 #echo "===> Wine -- Windows Emulator"
@@ -112,6 +112,7 @@ apt install ubuntu-restricted-extras -y
 echo "===>  Installing LAMP"
 apt install apache2 -y
 apt install mysql-server -y
+apt install php libapache2-mod-php
 
 echo
 echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
@@ -128,7 +129,7 @@ mysql
 
 apt install phpmyadmin -y
 apt install nodejs npm -y
-apt install mongodb-server -y
+# apt install mongodb-server -y
 apt install python3-pip -y
 apt install sqlite3 libsqlite3-dev -y
 
@@ -165,7 +166,7 @@ cp -Rg snapshots /opt/
 
 ### git
 echo "===> Installing Git"
-apt install git -y
+# apt install git -y
 git config --global color.ui auto
 git config --global user.name "Martin Cervantes"
 git config --global user.email "cervantes.martine@gmail.com"
@@ -199,12 +200,12 @@ tar -xzvf Postman-linux-x64-*.tar.gz -C /opt
 cd /opt/Postman
 ./Postman
 
-echo
-echo "* * *   MongoDB Compass   * * *"
-echo
-cd $ORIGIN
-echo
-apt install ./mongodb-compass_*_amd64.deb -y
+# echo
+# echo "* * *   MongoDB Compass   * * *"
+# echo
+# cd $ORIGIN
+# echo
+# apt install ./mongodb-compass_*_amd64.deb -y
 
 echo
 echo "* * *   GitKraken   * * *"
@@ -215,8 +216,8 @@ apt install ./gitkraken-amd64.deb -y
 echo
 echo "* * *   VNC-Viewer   * * *"
 echo
-cd $ORIGIN
-apt install ./VNC-Viewer-*-Linux-x64.deb -y
+# cd $ORIGIN
+# apt install ./VNC-Viewer-*-Linux-x64.deb -y
 
 echo
 echo "* * *   A T O M :D   * * *"
@@ -240,8 +241,8 @@ sh pycharm.sh
 echo
 echo "* * *   JavaFX SceneBuilder   * * *"
 echo
-cd $ORIGIN
-apt install ./javafx_scenebuilder-2_0-linux-x64.deb -y
+# cd $ORIGIN
+# apt install ./javafx_scenebuilder-2_0-linux-x64.deb -y
 
 echo
 echo "* * *   Android Studio   * * *"
